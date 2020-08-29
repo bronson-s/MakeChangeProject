@@ -1,5 +1,5 @@
-##First Skill Distillery HW:
-###Make Change Project
+## First Skill Distillery HW:
+### Make Change Project
 
 ### Overview
 For this project we were asked to create a program that acts like a cash register
