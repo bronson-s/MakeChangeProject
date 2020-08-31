@@ -112,9 +112,11 @@ public class makeChange {
 			System.out.println(nick + " Nickle");
 		}
 		if(penn > 1){
+			penn++;
 			System.out.println(penn + " Pennies");
 		}
 		if(penn == 1){
+			
 			System.out.println(penn + " Penny");
 		}
 
