@@ -16,13 +16,13 @@ public class makeChange {
 			System.out.println("Thank you for exact amount! ");
 		}
 
-		else if (amount < price) {
-			System.out.println("Can not complete sale.");
+		else if (amount > price) {
+			makeChange(amount, price);
 
 		}
 
 		else {
-			makeChange(amount, price);
+			System.out.println("Can not complete sale.");
 
 		}
 
@@ -43,6 +43,7 @@ public class makeChange {
 		System.out.println();
 		System.out.println("Your change is: ");
 		System.out.println();
+		
 
 		while (change >= 10) {
 			tenDB++;
@@ -72,16 +73,61 @@ public class makeChange {
 			penn++;
 			change -= .01;
 		}
-		System.out.print(tenDB + " Tens");
-		System.out.print(" " + fiveDB + " Fives");
-		System.out.println(" " + oneDB + " Ones");
-		System.out.println();
-		System.out.println("AND ");
-		System.out.println();
-		System.out.print(qaurter + " qaurters");
-		System.out.print(" " + dime + " dimes");
-		System.out.print(" " + nick + " nickles");
-		System.out.print(" and " + penn + " pennies");
-
+		
+		if(tenDB > 1){
+			System.out.println(tenDB + " Tens");
+		}
+		if(tenDB == 1) {
+			System.out.println(tenDB + " Ten");
+		}
+		
+		if(fiveDB > 1){
+			System.out.println(fiveDB + " Fives");
+		}
+		if(fiveDB == 1){
+			System.out.println(fiveDB + " Five");
+		}
+		if(oneDB > 1){
+			System.out.println(oneDB + " Ones");
+		}
+		if(oneDB == 1){
+			System.out.println(oneDB + " One");
+		}
+		if(qaurter > 1){
+			System.out.println(qaurter + " Quarters");
+		}
+		if(qaurter == 1){
+			System.out.println(qaurter + " Quarter");
+		}
+		if(dime > 1){
+			System.out.println(dime + " Dimes");
+		}
+		if(dime == 1){
+			System.out.println(dime + " Dime");
+		}
+		if(nick > 1){
+			System.out.println(nick + " Nickles");
+		}
+		if(nick == 1){
+			System.out.println(nick + " Nickle");
+		}
+		if(penn > 1){
+			System.out.println(penn + " Pennies");
+		}
+		if(penn == 1){
+			System.out.println(penn + " Penny");
+		}
+//		else {
+//		System.out.print(tenDB + " Tens");
+//		System.out.print(" " + fiveDB + " Fives");
+//		System.out.println(" " + oneDB + " Ones");
+//		System.out.println();
+//		System.out.println("AND ");
+//		System.out.println();
+//		System.out.print(qaurter + " qaurters");
+//		System.out.print(" " + dime + " dimes");
+//		System.out.print(" " + nick + " nickles");
+//		System.out.print(" and " + penn + " pennies");
+//		}
 	}
 }
