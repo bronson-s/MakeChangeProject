@@ -117,17 +117,6 @@ public class makeChange {
 		if(penn == 1){
 			System.out.println(penn + " Penny");
 		}
-//		else {
-//		System.out.print(tenDB + " Tens");
-//		System.out.print(" " + fiveDB + " Fives");
-//		System.out.println(" " + oneDB + " Ones");
-//		System.out.println();
-//		System.out.println("AND ");
-//		System.out.println();
-//		System.out.print(qaurter + " qaurters");
-//		System.out.print(" " + dime + " dimes");
-//		System.out.print(" " + nick + " nickles");
-//		System.out.print(" and " + penn + " pennies");
-//		}
+
 	}
 }
